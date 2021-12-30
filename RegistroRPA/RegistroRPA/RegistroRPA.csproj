@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11497D08-231F-4AAA-A82E-7A05635BAA6F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegistroRPA</RootNamespace>
+    <AssemblyName>RegistroRPA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.4.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\SideMenu.xml" />
+    <Content Include="App_Data\TopMenu.xml" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\MainMenu\48px\atm, machine, finance, cash, withdraw, money_48px.png" />
+    <Content Include="Images\MainMenu\48px\calendar, alert, notification, date, appointment_48px.png" />
+    <Content Include="Images\MainMenu\48px\calendar, cloud, appointment, date_48px.png" />
+    <Content Include="Images\MainMenu\48px\call, center, conversation, communication, support, international_48px.png" />
+    <Content Include="Images\MainMenu\48px\chat, communication, conversation, text, message_48px.png" />
+    <Content Include="Images\MainMenu\48px\coupon, discount, sale, percentage, scissor_48px.png" />
+    <Content Include="Images\MainMenu\48px\cut, price, scissor, dollar, finance, money_48px.png" />
+    <Content Include="Images\MainMenu\48px\dollar, finance, money, growth, business, plant_48px.png" />
+    <Content Include="Images\MainMenu\48px\euro, money, finance, payment, cash, network_48px.png" />
+    <Content Include="Images\MainMenu\48px\fire, sale, hot, percentage, ecommerce, commerce_48px.png" />
+    <Content Include="Images\MainMenu\48px\formula, marketing, business, dollar, money_48px.png" />
+    <Content Include="Images\MainMenu\48px\hierarchy, group, team, business, management_48px.png" />
+    <Content Include="Images\MainMenu\48px\innovation, innovative, review, dollar, settings, chart_48px.png" />
+    <Content Include="Images\MainMenu\48px\international, global, earth, conversation, chat, communication_48px.png" />
+    <Content Include="Images\MainMenu\48px\laptop, computer, electronic, device, technology_48px.png" />
+    <Content Include="Images\MainMenu\48px\location, pointer, map, destination, pin_48px.png" />
+    <Content Include="Images\MainMenu\48px\man, avatar, user, account, confirm, approve, complete_48px.png" />
+    <Content Include="Images\MainMenu\48px\online, shopping, discount, price, down, laptop, smartphone_48px.png" />
+    <Content Include="Images\MainMenu\48px\payment, method, cash, credit card, money, finance_48px.png" />
+    <Content Include="Images\MainMenu\48px\price, down, percentage, sale, discount, clothes_48px.png" />
+    <Content Include="Images\MainMenu\48px\print, cloud, transfer, data, storage_48px.png" />
+    <Content Include="Images\MainMenu\48px\prize, medal, award, reward, star_48px.png" />
+    <Content Include="Images\MainMenu\48px\receipt, finance, payment, ecommerce, commerce_48px.png" />
+    <Content Include="Images\MainMenu\48px\software, update, smartphone, phone, electronic, device_48px.png" />
+    <Content Include="Images\MainMenu\48px\team, group, people, management, business, work, employees_48px.png" />
+    <Content Include="Images\MainMenu\48px\upload, cloud, transfer, storage, data_48px.png" />
+    <Content Include="Images\MainMenu\48px\virtual, reality, projection, person, user, gamer_48px.png" />
+    <Content Include="Images\MainMenu\48px\virtual, reality, woman, player, gamer, game_48px.png" />
+    <Content Include="Images\MainMenu\48px\woman, user, account, gamer, virtual, reality, glasses_48px.png" />
+    <Content Include="Images\MainMenu\48px\woman, user, avatar, account, female_48px.png" />
+    <Content Include="Images\Misc\company_logo.png" />
+    <Content Include="Images\Misc\edit2.png" />
+    <Content Include="Images\Misc\icons8-new-100.png" />
+    <Content Include="Images\MainMenu\96px\atm, machine, finance, cash, withdraw, money_96px.png" />
+    <Content Include="Images\MainMenu\96px\calendar, alert, notification, date, appointment_96px.png" />
+    <Content Include="Images\MainMenu\96px\calendar, cloud, appointment, date_96px.png" />
+    <Content Include="Images\MainMenu\96px\call, center, conversation, communication, support, international_96px.png" />
+    <Content Include="Images\MainMenu\96px\chat, communication, conversation, text, message_96px.png" />
+    <Content Include="Images\MainMenu\96px\coupon, discount, sale, percentage, scissor_96px.png" />
+    <Content Include="Images\MainMenu\96px\cut, price, scissor, dollar, finance, money_96px.png" />
+    <Content Include="Images\MainMenu\96px\dollar, finance, money, growth, business, plant_96px.png" />
+    <Content Include="Images\MainMenu\96px\euro, money, finance, payment, cash, network_96px.png" />
+    <Content Include="Images\MainMenu\96px\fire, sale, hot, percentage, ecommerce, commerce_96px.png" />
+    <Content Include="Images\MainMenu\96px\formula, marketing, business, dollar, money_96px.png" />
+    <Content Include="Images\MainMenu\96px\hierarchy, group, team, business, management_96px.png" />
+    <Content Include="Images\MainMenu\96px\innovation, innovative, review, dollar, settings, chart_96px.png" />
+    <Content Include="Images\MainMenu\96px\international, global, earth, conversation, chat, communication_96px.png" />
+    <Content Include="Images\MainMenu\96px\laptop, computer, electronic, device, technology_96px.png" />
+    <Content Include="Images\MainMenu\96px\location, pointer, map, destination, pin_96px.png" />
+    <Content Include="Images\MainMenu\96px\man, avatar, user, account, confirm, approve, complete_96px.png" />
+    <Content Include="Images\MainMenu\96px\online, shopping, discount, price, down, laptop, smartphone_96px.png" />
+    <Content Include="Images\MainMenu\96px\payment, method, cash, credit card, money, finance_96px.png" />
+    <Content Include="Images\MainMenu\96px\price, down, percentage, sale, discount, clothes_96px.png" />
+    <Content Include="Images\MainMenu\96px\print, cloud, transfer, data, storage_96px.png" />
+    <Content Include="Images\MainMenu\96px\prize, medal, award, reward, star_96px.png" />
+    <Content Include="Images\MainMenu\96px\receipt, finance, payment, ecommerce, commerce_96px.png" />
+    <Content Include="Images\MainMenu\96px\software, update, smartphone, phone, electronic, device_96px.png" />
+    <Content Include="Images\MainMenu\96px\team, group, people, management, business, work, employees_96px.png" />
+    <Content Include="Images\MainMenu\96px\upload, cloud, transfer, storage, data_96px.png" />
+    <Content Include="Images\MainMenu\96px\virtual, reality, projection, person, user, gamer_96px.png" />
+    <Content Include="Images\MainMenu\96px\virtual, reality, woman, player, gamer, game_96px.png" />
+    <Content Include="Images\MainMenu\96px\woman, user, account, gamer, virtual, reality, glasses_96px.png" />
+    <Content Include="Images\MainMenu\96px\woman, user, avatar, account, female_96px.png" />
+    <Content Include="Images\Misc\mdt.png" />
+    <Content Include="Images\Misc\mdt2.png" />
+    <Content Include="Images\Misc\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Itext\itextsharp.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="RegistroRPA\AdministracionUsuarios.aspx" />
+    <Content Include="RegistroRPA\Archivos\DescargarArchivo.aspx" />
+    <Content Include="RegistroRPA\MainMenu.aspx" />
+    <Content Include="RegistroRPA\RegistroUsuario.aspx" />
+    <Content Include="RegistroRPA\Reportes\RegistroRPA.aspx" />
+    <Content Include="RegistroRPA\Archivos\SubirArchivo.aspx" />
+    <Content Include="RegistroRPA\TableroPrincipal\TableroPrincipal.aspx" />
+    <Content Include="RegistroRPA\TableroPrincipal\TableroPrincipalFirmador.aspx" />
+    <Content Include="RegistroRPA\TableroPrincipal\TableroPrincipalRegistroAeronautico.aspx" />
+    <Content Include="RegistroRPA\TableroPrincipal\TableroPrincipalUsuarioPlantaBaja.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Light.Master" />
+    <Content Include="Main.Master" />
+    <Content Include="Root.Master" />
+    <Content Include="Itext\itext7.7.1.13.nupkg" />
+    <Content Include="Itext\iTextSharp_5.4.4.zip" />
+    <None Include="Properties\PublishProfiles\Registro_RPA.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ConexionBDRPA.cs" />
+    <Compile Include="Classes\EnvioCorreos.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Light.Master.cs">
+      <DependentUpon>Light.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.Master.designer.cs">
+      <DependentUpon>Light.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroRPA\AdministracionUsuarios.aspx.cs">
+      <DependentUpon>AdministracionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\AdministracionUsuarios.aspx.designer.cs">
+      <DependentUpon>AdministracionUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\Archivos\DescargarArchivo.aspx.cs">
+      <DependentUpon>DescargarArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\Archivos\DescargarArchivo.aspx.designer.cs">
+      <DependentUpon>DescargarArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\Reportes\RegistroRPA.aspx.cs">
+      <DependentUpon>RegistroRPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\Reportes\RegistroRPA.aspx.designer.cs">
+      <DependentUpon>RegistroRPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\Reportes\ReporteRPA2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\Archivos\SubirArchivo.aspx.cs">
+      <DependentUpon>SubirArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\Archivos\SubirArchivo.aspx.designer.cs">
+      <DependentUpon>SubirArchivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipal.aspx.cs">
+      <DependentUpon>TableroPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipal.aspx.designer.cs">
+      <DependentUpon>TableroPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalFirmador.aspx.cs">
+      <DependentUpon>TableroPrincipalFirmador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalFirmador.aspx.designer.cs">
+      <DependentUpon>TableroPrincipalFirmador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalRegistroAeronautico.aspx.cs">
+      <DependentUpon>TableroPrincipalRegistroAeronautico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalRegistroAeronautico.aspx.designer.cs">
+      <DependentUpon>TableroPrincipalRegistroAeronautico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalUsuarioPlantaBaja.aspx.cs">
+      <DependentUpon>TableroPrincipalUsuarioPlantaBaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRPA\TableroPrincipal\TableroPrincipalUsuarioPlantaBaja.aspx.designer.cs">
+      <DependentUpon>TableroPrincipalUsuarioPlantaBaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root.Master.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.Master.designer.cs">
+      <DependentUpon>Root.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RegistroRPA\Reportes\ReporteRPA2.resx">
+      <DependentUpon>ReporteRPA2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1475</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1475/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

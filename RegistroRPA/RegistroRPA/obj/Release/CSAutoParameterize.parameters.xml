@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApplicationServices-Web.config Connection String" description="ApplicationServices Connection String used in web.config by the application to access the database." defaultValue="data source=(localdb)\v11.0;integrated security=SSPI;attachdbfilename=|DataDirectory|\aspnetdb.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\proyectos\\RegistroRPA\\RegistroRPA\\RegistroRPA\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+  <parameter name="NWindConnectionString-Web.config Connection String" description="NWindConnectionString Connection String used in web.config by the application to access the database." defaultValue="data source=(localdb)\v11.0;attachdbfilename=|DataDirectory|\NWind.mdf;integrated security=True;connect timeout=120" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\proyectos\\RegistroRPA\\RegistroRPA\\RegistroRPA\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NWindConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="Registro_RPAConnectionString-Web.config Connection String" description="Registro_RPAConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=win-sqlserv-02;Initial Catalog=Registro_RPA;User ID=adminsql;Password=sistema*-!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\proyectos\\RegistroRPA\\RegistroRPA\\RegistroRPA\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Registro_RPAConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,10 @@
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\bin\RegistroRPA.dll.config
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\bin\RegistroRPA.dll
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\bin\RegistroRPA.pdb
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\RegistroRPA.dll.licenses
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\RegistroRPA.dll
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\RegistroRPA.pdb
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\RegistroRPA.csproj.GenerateResource.Cache
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\ReporteRPA2.resources
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\bin\itextsharp.dll
+C:\proyectos\RegistroRPA\RegistroRPA\RegistroRPA\obj\Debug\RegistroRPA.csprojResolveAssemblyReference.cache
